@@ -37,5 +37,7 @@ and computes the correspnoding eigenvector.  The eigenvector (really, eigenfunct
 
 `plot(y,psi)`
 
+ This code corresponds to <b>Algorithm 3.2</b> in the reference text.
+
 
 
