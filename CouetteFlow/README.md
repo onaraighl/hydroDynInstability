@@ -26,9 +26,7 @@ This is the core of the solver.  The <b>inputs</b> are the wavenumber $\alpha$ (
 
 $$La=\lambda Ma$$
 
-to the Orr-Sommerfeld equation.  This is a generalized eigenvalue problem in linear algebra.
-
-Correspondingly, the output of the code is an array $\lambda$, which contains the first $N+1$ eigenvalues of the generalized eigenvalue problem.
+to the Orr-Sommerfeld equation.  This is a generalized eigenvalue problem in linear algebra.  Correspondingly, the output of the code is an array $\lambda$, which contains the first $N+1$ eigenvalues of the generalized eigenvalue problem.
 
 
 
