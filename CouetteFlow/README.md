@@ -36,9 +36,10 @@ Calls to `OS_solver` are wrapped in the `main_temporal` function.  The inputs to
 
 and corresponding eigenvalues:
 
-`sizezero=0*(1:length(alpha));`
-`lambda1=sizezero;`
-`lambda2=sizezero;`
+```matlab
+sizezero=0*(1:length(alpha));
+lambda1=sizezero;
+lambda2=sizezero;
 
 … all the way down to `lambda10`.
 
