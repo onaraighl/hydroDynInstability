@@ -46,15 +46,16 @@ lambda2=sizezero;
 
 A "for" loop is constructed:
 
-`for i=1:length(alpha)
+```matlab
+for i=1:length(alpha)
         alpha_param=alpha(i);
         [lambda,~,~]=OS_solver(alpha_param,u_vec1,ddu_vec1);
         [~,ix]=max(real(lambda));
         v1=lambda(ix);
         lambda(ix)=-1000;
         [~,ix]=max(real(lambda));
-        v2=lambda(ix);`
-
+        v2=lambda(ix);
+```
 … and so on, all the way down to `lambda10`.  
 
 In this way, the first 10 eigenvalues (sorted by largest real part) are picked out, at each value of $\alpha$, and stored in appropriate arrays.  Results may be visualized by plotting:
