@@ -13,7 +13,7 @@ This directory contains some simple codes to evaluate the dispersion relation in
 
 # [Spectral](https://github.com/onaraighl/hydroDynInstability/tree/main/Spectral)
 
-his directory contains some simple codes to obtain the eigenvalues and eigenfunctions of a simple 1D boundary value problem, for which exact solutions are known.  In this way the proposed numerical method can be validated before being extended to scenarios in which the eigenvalues are not known <i>a priori</i>.
+This directory contains some simple codes to obtain the eigenvalues and eigenfunctions of a simple 1D boundary value problem, for which exact solutions are known.  In this way the proposed numerical method can be validated before being extended to scenarios in which the eigenvalues are not known <i>a priori</i>.
 
 # RayleighTaylor
 
