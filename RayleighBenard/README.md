@@ -24,3 +24,15 @@ This code generates the neutral curve for the onset of instability (even case). 
 
 `plot(k_vec,Ra_vec)`
 
+This code corresponds to <b>Algorithm 1.2</b> in the reference text.
+
+# get_eval
+
+This code is a root-finding algorithm to obtain the allowed value of sigma (=sigma_eig) for the Rayleigh-Benard problem -- Even case.  
+
+
+The code takes in the prescirbed values of Rayleigh number (Ra), Prandtl number (Pr), and wavenumber (k).  It also requires an initial guess for sigma_eig.
+
+The code then sets up the cubic polynomial equation to solve and the resulting determinant equation.  The determinant equation is to be solved to give the allowed value of sigma_eig.  The determinant equation is solved using root-finding.
+
+
