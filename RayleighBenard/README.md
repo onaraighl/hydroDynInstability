@@ -2,7 +2,7 @@
 
 
 
-This directory contains some simple codes to evaluate the dispersion relation in Rayleigh-Benard convection.
+This directory contains some simple codes to evaluate the dispersion relation in Rayleigh-Bénard convection.
 
 
 
@@ -28,11 +28,15 @@ This code corresponds to <b>Algorithm 1.2</b> in the reference text.
 
 # get_eval
 
-This code is a root-finding algorithm to obtain the allowed value of sigma (=sigma_eig) for the Rayleigh-Benard problem -- Even case.  
+This code is a root-finding algorithm to obtain the allowed value of sigma (=sigma_eig) for the Rayleigh-Bénard problem - Even case.  
 
 
 The code takes in the prescirbed values of Rayleigh number (Ra), Prandtl number (Pr), and wavenumber (k).  It also requires an initial guess for sigma_eig.
 
 The code then sets up the cubic polynomial equation to solve and the resulting determinant equation.  The determinant equation is to be solved to give the allowed value of sigma_eig.  The determinant equation is solved using root-finding.
+
+Sample results are shown below - the dispersion relation for the even mode of the Rayleigh-Bénard instability for a variety of Rayleigh numbers and for fixed Prandtl number 7.56, corresponding to the Prandtl number of water at room temperature.
+
+![Cartoon](cartoon1.png)
 
 
