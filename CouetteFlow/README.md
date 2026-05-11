@@ -2,7 +2,9 @@
 
 
 
-This directory contains a Chebyshev collocation method to compute the eigenvalues of the Orr-Sommerfeld equation in case of <b>Couette Flow</b>.  The code structure is a little bit complicated.  Calls to the core solver `OS_sover.m` are handled by various wrap-around functions, supported by:
+This directory contains a Chebyshev collocation method to compute the eigenvalues of the Orr-Sommerfeld equation in case of <b>Couette Flow</b>.  The Couette flow is covered in <b>Section 4.5.1</b> of the reference textbook.
+
+The code structure is a little bit complicated.  Calls to the core solver `OS_sover.m` are handled by various wrap-around functions, supported by:
 
 * `fix_all_parameters.m`
 * `get_u.m`
