@@ -23,6 +23,10 @@ This directory contains codes to compute the eigenvalues of the Rayleigh-Taylor 
 
 # [CouetteFlow](https://github.com/onaraighl/hydroDynInstability/blob/main/CouetteFlow/README.md)
 
+
+
+This directory contains a Chebyshev collocation method to compute the eigenvalues of the Orr-Sommerfeld equation in case of Couette Flow. 
+
 # PoiseuilleFlow
 
 
