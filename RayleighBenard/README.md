@@ -1,0 +1,26 @@
+\# RayleighBenard
+
+
+
+This directory contains some simple codes to evaluate the dispersion relation in Rayleigh-Benard convection.
+
+
+
+\# my\_rayleigh\_benard0
+
+
+
+This code computes the critical Rayleigh number for the onset of instability, for a given wavenumber k (even case).  An initial guess for the critical Rayleigh number needs to be supplied.  The code corresponds to <b>Algorithm 1.1</b> in the reference text.
+
+
+
+\# my\_rayleigh\_benard1
+
+
+
+This code generates the neutral curve for the onset of instability (even case).  Inputs: null.  Outputs: k\_vec and Ra\_vec.  Here, k\_vec refers to an array of wavenumbers, and Ra\_vec is the corresponding array of critical Rayeligh numbers.  The curve can be visualized by plotting:
+
+
+
+`plot(k\_vec,Ra\_vec)`
+
