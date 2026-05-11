@@ -65,4 +65,7 @@ In this way, the first 10 eigenvalues (sorted by largest real part) are picked o
 Sample results are shown in the figure below.
 
 
+![Cartoon](cartoon1.png)
+
+
 
