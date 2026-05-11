@@ -41,9 +41,9 @@ Sample results are shown below - the dispersion relation for the even mode of th
 
 # get_eval_with_kernel
 
-This is the same as `get_val` except now a 3x3 matrix is also returned.  The idea is that 𝐌 $(\sigma)$ is a special matrix, such that non-trivial solutions of the Rayleigh-Bénard problem occur only when 𝐌 is singular.  Thus, the values of $\sigma$ for which $\det[$𝐌 $(\sigma)]=0$ are the eigenvalues of the Rayleigh-Bénard problem, previously computed.
+This is the same as `get_val` except now a 3x3 matrix $M$ is also returned.  The idea is that $M(\sigma)$ is a special matrix, such that non-trivial solutions of the Rayleigh-Bénard problem occur only when is singular.  Thus, the values of $\sigma$ for which $\det[M(\sigma)]=0$ are the eigenvalues of the Rayleigh-Bénard problem, previously computed.
 
-If we call the eigenvalue $\sigma_* $, then the corresponding eigenfunction can be found from vectors which span the kernel of $\bm{M}(\sigma_*)$.
+If we call the eigenvalue $\sigma_* $, then the corresponding eigenfunction can be found from vectors which span the kernel of $M(\sigma_*)$.
 
 In a nutshell, `get_eval_with_kernel` takes the following inputs:
 
@@ -56,7 +56,7 @@ In a nutshell, `get_eval_with_kernel` takes the following inputs:
 The following outputs are produced:
 
 * sigma_eig - true value of eigenvalue
-* M_ker = 3x3 singular matrix
+* M_ker - the 3x3 singular matrix M
 * z_vec - array of z-value, ranging from -0.5 to 0.5
 * W_vec - array of eigenfunction values, for the corresponding z-values
 
