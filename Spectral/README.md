@@ -23,7 +23,9 @@ $$
 
 This equation represents a disrectization and a truncation of the differential equation with $N+1$ degrees of freedom.
 
-The code uses numerical linear algebra in Matlab to compute the first  $N+1$ eigenvalues $\lambda$.  This code corresponds to <b>Algorithm 3.1</b> in the reference text.
+The code uses numerical linear algebra in Matlab to compute the first  $N+1$ eigenvalues $\lambda$.  This code corresponds to <b>Algorithm 3.1</b> in the reference text.  Sample results are shown below, along with a comparison between the numerical method and the theoretical value of the eigenvalues, which is known iexactly.  Here, $N=100$ and $L=2\pi$.
+
+![Cartoon](cartoon1.png)
 
 # make_eigenfunction_simple
 
