@@ -11,11 +11,15 @@ vortex shedding (itself a consequence of hydrodynamic instability) in parallel f
 
 This directory contains some simple codes to evaluate the dispersion relation in Rayleigh-Bénard convection. The dispersion relation is obtained by solving an eigenvalue problem. The directory also contains some more sophisticated codes to evaluate the corresponding eigenfunctions and hence, to visualize convection rolls for 2D convection patterns.
 
-# RayleighTaylor
-
 # [Spectral](https://github.com/onaraighl/hydroDynInstability/tree/main/Spectral)
 
+his directory contains some simple codes to obtain the eigenvalues and eigenfunctions of a simple 1D boundary value problem, for which exact solutions are known.  In this way the proposed numerical method can be validated before being extended to scenarios in which the eigenvalues are not known <i>a priori</i>.
+
+# RayleighTaylor
+
 # CouetteFlow
+
+# PoiseuilleFlow
 
 
 
