@@ -62,7 +62,7 @@ In this way, the first 10 eigenvalues (sorted by largest real part) are picked o
 
 `plot(alpha,lambda1)`
 
-Sample results are shown in the figure below.
+Sample results are shown in the figure below.  Again, we use $\alpha$ and $k$ interchangeably, to denote wavenumber.
 
 
 ![Cartoon](cartoon1.png)
