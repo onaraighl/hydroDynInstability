@@ -13,7 +13,7 @@ This directory contains some simple codes to evaluate the dispersion relation in
 
 # RayleighTaylor
 
-# Spectral
+# [Spectral](https://github.com/onaraighl/hydroDynInstability/tree/main/Spectral)
 
 # CouetteFlow
 
