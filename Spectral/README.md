@@ -27,13 +27,15 @@ The code uses numerical linear algebra in Matlab to compute the first  $N+1$ eig
 
 # make_eigenfunction_simple
 
-This code builds on `simple`.  The code takes the maximum eigenvalue from the set
+This code builds on `simple`  The code takes the maximum eigenvalue from the set
 
 $$
-\lambda_{max}=\{\lambda_1,...,\lambda_{N_1}\}
+\lambda_{max}=(\lambda_1,...,\lambda_{N_1})
 $$
 
-and computes the correspnoding eigenvector.
+and computes the correspnoding eigenvector.  The eigenvector (really, eigenfunction) can be visualized by plotting:
+
+`plot(y,psi)`
 
 
 
