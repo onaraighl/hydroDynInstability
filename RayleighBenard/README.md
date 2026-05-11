@@ -39,4 +39,28 @@ Sample results are shown below - the dispersion relation for the even mode of th
 
 ![Cartoon](cartoon1.png)
 
+# get_eval_with_kernel
+
+This is the same as `get_val` except now a 3x3 matrix is also returned.  The idea is that $\bm{M}(\sigma)$ is a special matrix, such that non-trivial solutions of the Rayleigh-Bénard problem occur only when M is singular.  Thus, the values of $\sigma$ for which $\det[\bm{M}(\sigma)]=0$ are the eigenvalues of the Rayleigh-Bénard problem, previously computed.
+
+If we call the eigenvalue $\sigma_*$, then the corresponding eigenfunction can be found from vectors which span the kernel of $\bm{M}(\sigma_*)$.
+
+In a nutshell, `get_eval_with_kernel` takes the following inputs:
+
+
+* Ra - Rayleigh number (scalar)
+* Pr - Prandtl number (scalar)
+* k - wavenumber (scalar)
+* sigma_guess - guess for eigenvalue 
+
+The following outputs are produced:
+
+* sigma_eig - true value of eigenvalue
+* M_ker = 3x3 singular matrix
+* z_vec - array of z-value, ranging from -0.5 to 0.5
+* W_vec - array of eigenfunction values, for the corresponding z-values
+
+Outputs can be plotted using:
+
+`plot(z_vec,W_vec)`
 
