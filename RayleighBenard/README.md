@@ -1,4 +1,4 @@
-\# RayleighBenard
+# RayleighBenard
 
 
 
@@ -6,7 +6,7 @@ This directory contains some simple codes to evaluate the dispersion relation in
 
 
 
-\# my\_rayleigh\_benard0
+# my_rayleigh_benard0
 
 
 
@@ -14,7 +14,7 @@ This code computes the critical Rayleigh number for the onset of instability, fo
 
 
 
-\# my\_rayleigh\_benard1
+# my_rayleigh_benard1
 
 
 
