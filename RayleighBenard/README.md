@@ -64,3 +64,24 @@ Outputs can be plotted using:
 
 `plot(z_vec,W_vec)`
 
+# get_roll
+
+This code utilizes get_eval_with_kernel to plot the eigenfunction again, but now in a 2D space, such that the full $xz$-dependence is revealed.  The results can visualized with a contour plot.
+
+Inputs:
+
+* Ra - Rayleigh number (scalar)
+* Pr - Prandtl number (scalar)
+* k - wavenumber (scalar)
+* sigma_guess 
+
+Outputs:
+
+* X - array of x-values
+* Z - array of z-values
+* U_mx, W_mx, Psi_mx - arrays of velocity and streamfunction values
+
+Sample outputs are shown below - the streamfunction for the two-dimensional convection roll at criticality (Ra=1708, $k_c=3.12$, and arbitrary Prandtl number).
+
+![Cartoon](cartoon2.png)
+
