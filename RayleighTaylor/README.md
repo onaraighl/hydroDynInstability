@@ -1,7 +1,6 @@
 # RayleighTaylor
 
-
-This directory contains codes to compute the eigenvalues of the Rayleigh-Taylor problem (viscous case).
+This directory contains codes to compute the eigenvalues of the Rayleigh-Taylor problem (viscous case).  The codes are based on a Chebyshev collocation method.  The ordinary differential equations for each phase are discretized.  Matching conditions are applied at the interface.  The eigenvalue problem is then approximated as a generalized eigenvalue problem, and the eigenvalues are estimated using numerical linear algebra.
 
 
 # OS_rti
