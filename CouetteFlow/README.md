@@ -2,14 +2,14 @@
 
 
 
-This directory contains a Chebyshev collocation method to compute the eigenvalues of the Orr-Sommerfeld equation in case of<b>Couette Flow</b>.  The code structure is a little bit complicated.  Calls to the core solver `OS_sover.m` are handled by various wrap-around functions, supported by:
+This directory contains a Chebyshev collocation method to compute the eigenvalues of the Orr-Sommerfeld equation in case of <b>Couette Flow</b>.  The code structure is a little bit complicated.  Calls to the core solver `OS_sover.m` are handled by various wrap-around functions, supported by:
 
 * `fix_all_parameters.m`
 * `get_u.m`
 
 # fix_all_parameters
 
-IN this code, the Reynolds number $Re$ and the truncation number $N_1$ are fixed.  Correspondingly, there are $N_1+1$ Chebyshev polynomials used in the truncation.
+In this code, the Reynolds number $Re$ and the truncation number $N_1$ are fixed.  Correspondingly, there are $N_1+1$ Chebyshev polynomials used in the truncation.
 
 # get_u
 
