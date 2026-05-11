@@ -39,7 +39,7 @@ and corresponding eigenvalues:
 ```matlab
 sizezero=0*(1:length(alpha));
 lambda1=sizezero;
-lambda2=sizezero;
+lambda2=sizezero;```
 
 … all the way down to `lambda10`.
 
