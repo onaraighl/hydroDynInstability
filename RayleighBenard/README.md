@@ -22,5 +22,5 @@ This code generates the neutral curve for the onset of instability (even case). 
 
 
 
-`plot(k\_vec,Ra\_vec)`
+`plot(k_vec,Ra_vec)`
 
