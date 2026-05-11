@@ -1,7 +1,7 @@
 # RayleighTaylor
 
 
-This directory contains codes to compute the eigenvalues of the Rayleigh-Taylor problem -- viscous case.
+This directory contains codes to compute the eigenvalues of the Rayleigh-Taylor problem (viscous case).
 
 
 # OS_rti
@@ -40,3 +40,6 @@ For each element in this array, the code `OS_rti` is run and the eigenvalue with
 Results can be visualized (e.g. in the figure) by plotting:
 
 `plot(alpha_vec,lambda_vec)`
+
+
+![Cartoon](cartoon1.png)
