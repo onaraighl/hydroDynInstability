@@ -7,8 +7,7 @@ vortex shedding (itself a consequence of hydrodynamic instability) in parallel f
 
 ![Cartoon](cartoon1.png)
 
-
-# RayleighBenard
+# [RayleighBenard](https://github.com/onaraighl/hydroDynInstability/tree/main/RayleighBenard)
 
 This directory contains some simple codes to evaluate the dispersion relation in Rayleigh-Bénard convection. The dispersion relation is obtained by solving an eigenvalue problem. The directory also contains some more sophisticated codes to evaluate the corresponding eigenfunctions and hence, to visualize convection rolls for 2D convection patterns.
 
