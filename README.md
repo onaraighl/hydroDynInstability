@@ -20,7 +20,8 @@ This directory contains some simple codes to obtain the eigenvalues and eigenfun
 
 This directory contains codes to compute the eigenvalues of the Rayleigh-Taylor problem (viscous case).  The codes are based on a Chebyshev collocation method.  The ordinary differential equations for each phase are discretized.  Matching conditions are applied at the interface.  The eigenvalue problem is then approximated as a generalized eigenvalue problem, and the eigenvalues are estimated using numerical linear algebra.
 
-# CouetteFlow
+
+# [CouetteFlow](https://github.com/onaraighl/hydroDynInstability/blob/main/CouetteFlow/README.md)
 
 # PoiseuilleFlow
 
