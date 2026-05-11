@@ -1,6 +1,8 @@
 # Spectral
 
-This directory contains some simple codes to obtain the eigenvalues and eigenfunctions of the following equation:
+This directory contains some simple codes to obtain the eigenvalues and eigenfunctions of a simple 1D boundary value problem, for which exact solutions are known. In this way the proposed numerical method can be validated before being extended to scenarios in which the eigenvalues are not known a priori.
+
+The simple 1D problem starts with the following ordinary differential equation (ODE):
 
 $$
 \frac{d^2f}{dy^2}=-\lambda f.
@@ -15,7 +17,7 @@ $$
 
 # simple
 
-This code recasts the differential equation as ageneralized eigenvalue problem:
+This code recasts the differential equation as a generalized eigenvalue problem:
 
 $$
 La=\lambda Ma
