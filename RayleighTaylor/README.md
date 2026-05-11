@@ -12,7 +12,7 @@ $$
 La=\lambda Ma
 $$
 
-The wavenumber $\alpha$ (scalar-valued) is the only input into the code.  All other parameters are hard-coded:
+The wavenumber $\alpha$ (scalar-valued) is the only input into the code.  Note that $k$ is used for wavenumber in the reference text.  All other parameters are hard-coded:
 
 * nuL- depth of liquid layer
 * nuG - depth of gas layer
