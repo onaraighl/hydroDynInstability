@@ -35,3 +35,5 @@ This directory contains a Chebyshev collocation method to compute the eigenvalue
 
 # [AbsoluteInstability](https://github.com/onaraighl/hydroDynInstability/tree/main/AbsoluteInstability)
 
+This directory contains a Chebyshev collocation method to compute the eigenvalues of the Orr-Sommerfeld equation in case of a mixing-layer flow.
+
