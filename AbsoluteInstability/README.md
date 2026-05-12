@@ -8,7 +8,7 @@ $$
 U_0(z)=1-\Lambda+\frac{2\Lambda}{1+\sinh^{2N}[z\sinh^{-1}(1)]},
 $$
 
-Nominally, $z\in (-\infty,\infty)$, which is truncated in the code, with $z\in (-H,H)$, where $H$ should be large.  This example is covered in Section 5.7 of the reference text.
+Nominally, $z\in (-\infty,\infty)$, which is truncated in the code, with $z\in (-H,H)$, where $H$ should be large.  This example is covered in <b>Section 5.7</b> of the reference text.
 
 Again, the code structure is a little bit complicated, and is summarized here in what follows.
 
