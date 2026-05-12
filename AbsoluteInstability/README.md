@@ -56,8 +56,7 @@ The eigenvalues are sorted by the largest real part as in previous examples, and
 ```matlab
 for i=1:length(ar)
     for j=1:length(ai)
-        alpha_param=ar(i)+sqrt(-1)*ai(j);
-        
+        alpha_param=ar(i)+sqrt(-1)*ai(j);        
 
         [lambda,~,~]=mixing_layer_solver(alpha_param,T4_1,T2_1,T0_1,T0_U2_1,T2_U0_1,T0_U0_1);
         
@@ -67,13 +66,10 @@ for i=1:length(ar)
         [~,ix]=max(real(lambda));
         v2=sqrt(-1)*lambda(ix);
         lambda(ix)=-1000;
-
-	…
-
- 	omega1(i,j)=v1;
+	    …
+ 	    omega1(i,j)=v1;
         omega2(i,j)=v2;
-
-	…
+	    …
 	end
 end
 ```
