@@ -32,7 +32,7 @@ Re=100;
 N_1 =95;
 ```
 
-Here, `R_param` is equivlanet to $\Lammbda$, and `N_param` is equivalent to $N$ in the definition of the base flow $U_0(z)$.
+Here, `R_param` is equivlanet to $\Lambda$, and `N_param` is equivalent to $N$ in the definition of the base flow $U_0(z)$.
 
 # main_spatiotemporal
 
