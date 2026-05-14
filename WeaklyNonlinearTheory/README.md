@@ -10,7 +10,7 @@ $$
 
 with initial data $C(x,t=0)=C_{init}(x)$ and periodic boundary coditions on the interval $(0,L)$.  Also, $D$ and $\gamma$ are positive constants.
 
-The solution $C(x,t)$can be written in term sof Fourier modes:
+The solution $C(x,t)$ can be written in term sof Fourier modes:
 
 $$
 C(x,t)=\sum_{n=-\infty}^\infty A_n(t)e^{i k_n x},\qquad k_n=(2\pi/L)n,\qquad A_{-n}=A_n^*
