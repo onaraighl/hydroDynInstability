@@ -62,4 +62,4 @@ data files are provided here so that the code can be immediately used.  Two such
 * srj_relaxation_factors_P5_N246.dat
 
 The choice of file is selected in the main part of the code (main_spsrj_LES.f90 and
-main_spsrj_LES_restart.f90) -- search for "Get relaxation values for SRJ scheme"
+main_spsrj_LES_restart.f90) - search for "Get relaxation values for SRJ scheme"
