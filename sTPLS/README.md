@@ -2,7 +2,9 @@
 
 This directory contains a Fortran 90 Navier-Stokes solver which simulates turbulent channel flow, using a Large-Eddy Simulation (LES) with a Smagorinsky closure model.  The computational domain is shown below.  The computational setup is described in detail in <b>Chapter 12</b> of the reference text.  This builds on an earlier publication by ![Ó Náraigh, Fannon, and Loiseau](https://iopscience.iop.org/article/10.1088/0143-0807/37/4/045001/meta).  For maximum accessibility, it is the publication that is referred to here. 
 
-Note: the code was first hosted on ![sourceforge](https://sourceforge.net/p/tpls/code/HEAD/tree/trunk/s-tpls/).  In May 2025 this code was downloaded to a local machine and some corrections were made (to bring the Fortran MPI into the present decade).  The resultingn code was recompiled on a local machine and rune for a test case.  Once tested, the code was uploaded here.
+![cartoon](cartoon1.png)
+
+<b>Note:</b> the code was first hosted on ![sourceforge](https://sourceforge.net/p/tpls/code/HEAD/tree/trunk/s-tpls/).  In May 2025 this code was downloaded to a local machine and some corrections were made (to bring the Fortran MPI into the present decade).  The resultingn code was recompiled on a local machine and rune for a test case.  Once tested, the code was uploaded here.
 
 
 # Compiling code and running the code
