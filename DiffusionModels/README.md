@@ -1,47 +1,37 @@
-# Spectral
+# DiffusionModels
 
-This directory contains some simple codes to obtain the eigenvalues and eigenfunctions of a simple 1D boundary value problem (BVP), for which exact solutions are known. In this way the proposed numerical method can be validated before being extended to scenarios in which the eigenvalues are not known a priori.
+This directory contains some simple codes to solve the <i>Model Diffusion Problem</i>, as discussed in <b>Chapter 10</b> of the reference text.
 
-The simple 1D problem starts with the following ordinary differential equation:
-
-$$
-\frac{d^2f}{dy^2}=-\lambda f.
-$$
-
-The domain is given as $y\in (-L/2,L/2)$, and homogeneous boundary conditions are assumed on either end:
+The Model Diffusion Problem refers to the following Partial Differential Equation (PDE):
 
 $$
-f(-L/2)=f(L/2)=0.
+\frac{\partial C}{\partial t}=\nabla^2 C+s(x,z),\qquad (x,z)\in\Omega,
 $$
 
-
-# simple
-
-This code recasts the BVP as a generalized eigenvalue problem:
+where
 
 $$
-La=\lambda Ma
+\Omega=(0,L_x)\times (0,1),
 $$
 
-This equation represents a disrectization and a truncation of the BVP with $N+1$ degrees of freedom.
+and $\nabla^2=\partial_x^2+\partial_z^2$ is the Laplacian.
 
-The code uses numerical linear algebra in Matlab to compute the first  $N+1$ eigenvalues $\lambda$.  This code corresponds to <b>Algorithm 3.1</b> in the reference text.  Sample results are shown below, along with a comparison between the numerical method and the theoretical value of the eigenvalues, which is known exactly.  Here, $N=100$ and $L=2\pi$.
-
-![Cartoon](cartoon1.png)
-
-# make_eigenfunction_simple
-
-This code builds on `simple`  The code takes the maximum eigenvalue from the set
+The partial differential equation is subject to the following boundary conditions:
 
 $$
-\lambda_{max}=(\lambda_1,...,\lambda_{N_1})
+\frac{\partial C}{\partial z}=0,\qquad z=0,\qquad z=1,
 $$
 
-and computes the correspnoding eigenvector.  The eigenvector (really, eigenfunction) can be visualized by plotting:
+together with  periodic boundary conditions in the $x$ direction:
 
-`plot(y,psi)`
+$$
+C(x=0,z,t)=C(x=L_x,z,t).
+$$
 
- This code corresponds to <b>Algorithm 3.2</b> in the reference text.
+Finally, an initial condition is prescribed:
 
-
-
+$$
+C(x,z,t=0)=C_{\mathrm{init}}(x,z),\qquad (x,z)\in \overline{\Omega},
+$$
+%
+where $C_{\mathrm{init}}(x,z)$ is a continuous function.
