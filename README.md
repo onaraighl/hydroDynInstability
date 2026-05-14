@@ -39,3 +39,5 @@ This directory contains a Chebyshev collocation method to compute the eigenvalue
 
 This directory contains a Chebyshev collocation method to compute the eigenvalues of the Orr-Sommerfeld equation in case of a mixing-layer flow.
 
+# [TransientGrowth](https://github.com/onaraighl/hydroDynInstability/tree/main/TransientGrowth)
+
