@@ -54,7 +54,7 @@ Other key input parameters are fixed in `fix_all_parameters.m`
 
 # Truncated Set of Equations
 
-Just above criticality, in a parameter regime where there is only a single unstable mode, the infinite-dimensional set of amplitude euations maybe truncated.  One particularly simple truncation involves only three modes and is shwon below:
+Just above criticality, in a parameter regime where there is only a single unstable mode, the infinite-dimensional set of amplitude euations maybe truncated.  One particularly simple truncation involves only three modes and is shown below:
 
 ![Cartoon](cartoon1.png)
 
