@@ -20,4 +20,4 @@ Further outputs:
 
 Sample results using this code are shown below.
 
-![Cartoon](cartoon1.png1)
+![Cartoon](cartoon1.png)
