@@ -46,8 +46,22 @@ $$
 in <b>Case 1</b> with $4A^2>(g_1-g_2)^2$, and
 
 $$
-\omega_r=E_0, \qquad \omega_i=\mu_0-(1/2)(g_1+g_2)\pm \sqrt{ (g_1-g_2)^2-4A^2}
+\omega_r=E_0, \qquad \omega_i=\mu_0-(1/2)(g_1+g_2)\pm (1/2) \sqrt{ (g_1-g_2)^2-4A^2}
 $$
 
 
 in <b>Case 2</b> with $4A^2<(g_1-g_2)^2$.
+
+# Transient Growth
+
+In cases where the eigenvalues of the linear problem are negative, the full non-linear ODE may exhibit transient growth, due to the non-normal natrue of the matrix
+
+$$
+H+i(\mu_0 \mathbb{I}+G).
+$$
+
+Furthermore, the nonlinear term si such that once transient growth occurs, explosive nonlinear growth of the amplitude $||u||_2^2$ follows.  This is illustraed in the figure below.
+
+# A note on the time-marching algorithm
+
+
