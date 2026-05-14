@@ -51,3 +51,8 @@ This directory contains a suite of codes to solve the 1D Cahn-Hilliard (CH) equa
 
 This directory contains some simple codes to solve the Model Diffusion Problem, as discussed in Chapter 10 of the reference text.
 
+
+# [TurbulenceModel](https://github.com/onaraighl/hydroDynInstability/tree/main/TurbulenceModel)
+
+This directory contains a simple code to compute the mean velocity profile in a channel in case of a turbulent channel flow.
+
