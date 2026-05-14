@@ -33,5 +33,5 @@ Finally, an initial condition is prescribed:
 $$
 C(x,z,t=0)=C_{\mathrm{init}}(x,z),\qquad (x,z)\in \overline{\Omega},
 $$
-%
+
 where $C_{\mathrm{init}}(x,z)$ is a continuous function.
