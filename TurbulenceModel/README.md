@@ -1,47 +1,21 @@
-# Spectral
+# TurbulenceModel
 
-This directory contains some simple codes to obtain the eigenvalues and eigenfunctions of a simple 1D boundary value problem (BVP), for which exact solutions are known. In this way the proposed numerical method can be validated before being extended to scenarios in which the eigenvalues are not known a priori.
+This directory contains a simple code to compute the mean velocity profile in a channel in case of a turbulent channel flow.  The code uses the turbulence model for channel flows describedin <b>Chapter 11</b> of the reference textbook.
 
-The simple 1D problem starts with the following ordinary differential equation:
+The main code is ``get_U_singlephase.m``  The single input is the Renolds number $ReG$.  The outputs are:
 
-$$
-\frac{d^2f}{dy^2}=-\lambda f.
-$$
+* zG - z-coordinate
+* uG - average $u$-velcocity, as a function of $z$.
 
-The domain is given as $y\in (-L/2,L/2)$, and homogeneous boundary conditions are assumed on either end:
+These can be visualized, e.g.
 
-$$
-f(-L/2)=f(L/2)=0.
-$$
+``plot(zG,uG)``
 
+Further outputs:
 
-# simple
+* Re_star - Reynolds number based on friction velocity
+* ReG - redundant, as this is an input
+* tauG - Reynolds stress, again $z$-dependent
+* kG - turbulent kinetic energy, again $z$-depenent
 
-This code recasts the BVP as a generalized eigenvalue problem:
-
-$$
-La=\lambda Ma
-$$
-
-This equation represents a disrectization and a truncation of the BVP with $N+1$ degrees of freedom.
-
-The code uses numerical linear algebra in Matlab to compute the first  $N+1$ eigenvalues $\lambda$.  This code corresponds to <b>Algorithm 3.1</b> in the reference text.  Sample results are shown below, along with a comparison between the numerical method and the theoretical value of the eigenvalues, which is known exactly.  Here, $N=100$ and $L=2\pi$.
-
-![Cartoon](cartoon1.png)
-
-# make_eigenfunction_simple
-
-This code builds on `simple`  The code takes the maximum eigenvalue from the set
-
-$$
-\lambda_{max}=(\lambda_1,...,\lambda_{N_1})
-$$
-
-and computes the correspnoding eigenvector.  The eigenvector (really, eigenfunction) can be visualized by plotting:
-
-`plot(y,psi)`
-
- This code corresponds to <b>Algorithm 3.2</b> in the reference text.
-
-
-
+Sample results using this code are shown below.
