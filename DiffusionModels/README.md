@@ -59,7 +59,7 @@ $$
 
 and similarly, $\Delta z=L_z/(n_z-1)$.
 
-The PDE is also discretized in time, such that the solution is only available at discrete points in time $t_n=n\Delta t$, with $n=0,1,\cdots$.  The solution at $t_n$ and $\boldsymbole{x}=(i\Delta x,\Delta j)$ is written as $C_{ij}^n$.  The diffusion operator in the PDE is approximated by centred differences:
+The PDE is also discretized in time, such that the solution is only available at discrete points in time $t_n=n\Delta t$, with $n=0,1,\cdots$.  The solution at $t_n$ and $\boldsymbol{x}=(i\Delta x,\Delta j)$ is written as $C_{ij}^n$.  The diffusion operator in the PDE is approximated by centred differences:
 
 $$
 \begin{aligned}
@@ -85,7 +85,7 @@ $$
 On the left-hand side, the quantity $\left[1-\tfrac{1}{2}\Delta t\mathcal{D}\right]$ is in fact a matrix operator, and the solution is available only in <i>implicit</i> form: an inversion needs to be performed to extract $C_{ij}^{n+1}$ from this implicit equation:
 
 $$
-C_{ij}^{n+1}=\left[\mathbb{I}-\tfrac{1}{2}\Delta t\mathcal{D}\right]^{-1}\big\{\left[\mathbb{I}+\tfrac{1}{2}\Delta t\mathcal{D}\right]\left(C_{ij}^n\right)+\Delta ts_{ij}\big\}.
+C_{ij}^{n+1}=\left[\mathbb{I}-\tfrac{1}{2}\Delta t\mathcal{D}\right]^{-1}\{\left[\mathbb{I}+\tfrac{1}{2}\Delta t\mathcal{D}\right]\left(C_{ij}^n\right)+\Delta ts_{ij}\}.
 $$
 
 The implicit equation is written out in more detail now:
