@@ -29,6 +29,8 @@ G=\begin{pmatrix}
 \end{pmatrix}
 $$
 
+This equation is studied in the context of transient growth in Fluid Dynamics, in <b>Chapter 6</b> of the reference text.
+
 # Linear Problem
 
 The linearization of the ODE is written as follows:
@@ -61,6 +63,8 @@ H+i(\mu_0 \mathbb{I}+G).
 $$
 
 Furthermore, the nonlinear term si such that once transient growth occurs, explosive nonlinear growth of the amplitude $||u||_2^2$ follows.  This is illustraed in the figure below.
+
+![Cartoon](cartoon1.png)
 
 # A note on the time-marching algorithm
 
