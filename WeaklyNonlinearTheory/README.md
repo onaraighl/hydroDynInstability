@@ -52,4 +52,12 @@ These can be plotted, e.g.
 
 Other key input parameters are fixed in `fix_all_parameters.m`
 
+# Truncated Set of Equations
+
+Just above criticality, in a parameter regime where there is only a single unstable mode, the infinite-dimensional set of amplitude euations maybe truncated.  One particularly simple truncation involves only three modes and is shwon below:
+
+The code ``ch_ode_solve.m`` solves this set of three coupled equation.
+
+Results showing the comparison between the simple three-equation model and solutions of the full CH equation are shown below.
+
 
