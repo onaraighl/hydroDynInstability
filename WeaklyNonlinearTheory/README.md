@@ -1,6 +1,8 @@
-# AbsoluteInstability
+# WeaklyNonlinearTheory
 
 In <b>Chapter 7</b> of the reference text, various 1D partial differential equations (PDEs) with periodic boundary conditions are investigated.  The equations are inspired by applications in Physics, meaning they have a well-defined threshold for the onset of linear instability.  Based on the PDEs, the Fourier amplitudes (or normal modes) of the solution are computed, and are found to solve a system of coupled ODEs.  Typically, there are infinitely many degrees of freedom in the system of coupled ODEs.  However, just beyond the threshold for the onset of linear instability, an approximation can be made which greatly simplifies this coupled system.  This approxiation goes by the name of <b>weakly nonlinear theory</b>.
+
+# Cahn-Hilliard Equation
 
 In this repository, the Cahn-Hilliard equation in one spatial dimension is introduced as a use case of weakly nonlinear analysis.  The equation reads:
 
@@ -29,3 +31,25 @@ $$
 $$
 
 where $\nu(k)=Dk^2(1-\gamma k^2)$ gives the dispersion relation for the linearized Cahn-Hilliard equation.
+
+# Matlab code
+
+The code `ch_one_d_solve.m` solves the 1D Cahn-Hilliard code using a semi-implicit pseodospectral numerical method described in <b>Section 7.3</b> of the reference text.  The input variable is `t_final` which is the final time to which the simulation is run.  The output variables are:
+
+* xx - array of discrete x-points
+* c - corresponding array of c-points
+  
+These can be plotted, e.g.
+
+``plot(xx,c)``
+
+* t_out - array of discrete time ponts
+* a1,...,a5 - first five Fourier modes, corresponding to n=1,2,3,4, and n=5.
+
+* These can be plotted, e.g.
+
+``plot(t_out,abs(a1))``
+
+Other key input parameters are fixed in `fix_all_parameters.m`
+
+
