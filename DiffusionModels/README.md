@@ -119,6 +119,13 @@ The first file here is the main one.  The inputs are null, as key parameters are
 * xx - array of discrete x-coordinates
 * yy - array of discrete y-coordinates
 * Concentration field C at the final time.
+
+The concentration $C$ can be visualized, e.g.:
+
+``contour(xx,yy,C)``
+
+Further outputs:
+
 * time_vec - array of discrete times
 * norm_decay - L2 norm of the differene between $C(x,y,t)$ and $C_0(x,y)$, the latter being the solutoin of the stationary problem.
 
