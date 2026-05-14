@@ -43,3 +43,7 @@ This directory contains a Chebyshev collocation method to compute the eigenvalue
 
 This directory contains a solver which solves a simple ODE exhibiting transient growth and subsequent explosive non-linear growth.
 
+# [WeaklyNonlinearTheory](https://github.com/onaraighl/hydroDynInstability/tree/main/WeaklyNonlinearTheory)
+
+This directory contains a suite of codes to solve the 1D Cahn-Hilliard (CH) equation with periodic boundary conditins, using a semi-implicit pseudospetral method.  The directory contains a description of how to perform weakly nonlinear analysis on the equation, such that the behaviour of the CH equation can be described very accurately by a reduced set of three coupled ODEs.
+
