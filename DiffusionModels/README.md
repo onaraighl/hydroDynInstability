@@ -106,3 +106,24 @@ $$
 $$
 
 This last expression is the one that gets implmeneted in Matlab.  The matrix inversion is achieved using either the Jacobi method or the SOR method.
+
+# Matlab codes
+
+The above numerical algorithm (with Jacobi for the matrix inversion) is implemented in the following Matlab codes:
+
+* `test_diffusion_jacobi.m`
+*  `fix_all_parameters.m`
+
+The first file here is the main one.  The inputs are null, as key parameters are set in `fix_all_parameters.m`.  The outputs are:
+
+* xx - array of discrete x-coordinates
+* yy - array of discrete y-coordinates
+* Concentration field C at the final time.
+* time_vec - array of discrete times
+* norm_decay - L2 norm of the differene between $C(x,y,t)$ and $C_0(x,y)$, the latter being the solutoin of the stationary problem.
+
+Arrays `time_vec` and `norm_decay` are to be taken together, thus `norm_decay` can be visualized by plotting e.g. `plot(time_vec,norm_decay)`
+
+# Stationary Problem
+
+At late times, the solution of the model diffusion problem relaxes to the solution of a corresponding model Poisson problem - this is the already-introduced function $C_0(x,y)$.  The code `test_poisson_jacobi.m`  solves this Poisson problem.
