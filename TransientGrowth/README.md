@@ -62,10 +62,17 @@ $$
 H+i(\mu_0 \mathbb{I}+G).
 $$
 
-Furthermore, the nonlinear term si such that once transient growth occurs, explosive nonlinear growth of the amplitude $||u||_2^2$ follows.  This is illustraed in the figure below.
+Furthermore, the nonlinear term is such that once transient growth occurs, explosive nonlinear growth of the amplitude $||u||_2^2$ follows.  This is illustraed in the figure below.
 
 ![Cartoon](cartoon1.png)
 
 # A note on the time-marching algorithm
+
+The ODE solver `my_ode_modelB.m` calls `ode87$, and eigth-order accurate RK solver developed by V. N. Govorukhin.  The code can be downloaded from the Matlab file exchange:
+
+https://uk.mathworks.com/matlabcentral/fileexchange/3616-ode87-integrator
+
+This code has also been placed in this current directory for ease of use.  The authorship of Govorukhin is greatefully acknowledged.
+
 
 
