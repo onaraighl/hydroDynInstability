@@ -56,3 +56,7 @@ This directory contains some simple codes to solve the Model Diffusion Problem, 
 
 This directory contains a simple code to compute the mean velocity profile in a channel in case of a turbulent channel flow.
 
+# [sTPLS](https://github.com/onaraighl/hydroDynInstability/tree/main/sTPLS)
+
+This directory contains a Fortran 90 Navier-Stokes solver which simulates turbulent channel flow, using a Large-Eddy Simulation (LES) with a Smagorinsky closure model.
+
