@@ -47,3 +47,7 @@ This directory contains a solver which solves a simple ODE exhibiting transient 
 
 This directory contains a suite of codes to solve the 1D Cahn-Hilliard (CH) equation with periodic boundary conditins, using a semi-implicit pseudospetral method.  The directory contains a description of how to perform weakly nonlinear analysis on the equation, such that the behaviour of the CH equation can be described very accurately by a reduced set of three coupled ODEs.
 
+# [DiffusionModels](https://github.com/onaraighl/hydroDynInstability/tree/main/DiffusionModels)
+
+This directory contains some simple codes to solve the Model Diffusion Problem, as discussed in Chapter 10 of the reference text.
+
