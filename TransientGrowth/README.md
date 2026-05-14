@@ -68,7 +68,7 @@ Furthermore, the nonlinear term is such that once transient growth occurs, explo
 
 # A note on the time-marching algorithm
 
-The ODE solver `my_ode_modelB.m` calls `ode87`, and eigth-order accurate RK solver developed by V. N. Govorukhin.  The ode87 solver can be downloaded from the ![Matlab file exchange](https://uk.mathworks.com/matlabcentral/fileexchange/3616-ode87-integrator).
+The ODE solver `my_ode_modelB.m` calls ode87, and eigth-order accurate RK solver for Matlab developed by V. N. Govorukhin.  The ode87 solver can be downloaded from the ![Matlab file exchange](https://uk.mathworks.com/matlabcentral/fileexchange/3616-ode87-integrator).
 The solver has also been placed in this current directory for ease of use.  The authorship of Govorukhin is greatefully acknowledged.
 
 
