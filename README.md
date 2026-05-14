@@ -41,3 +41,5 @@ This directory contains a Chebyshev collocation method to compute the eigenvalue
 
 # [TransientGrowth](https://github.com/onaraighl/hydroDynInstability/tree/main/TransientGrowth)
 
+This directory contains a solver which solves a simple ODE exhibiting transient growth and subsequent explosive non-linear growth.
+
