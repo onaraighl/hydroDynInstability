@@ -1,87 +1,31 @@
 # AbsoluteInstability
 
+In <b>Chapter 7</b> of the reference text, various 1D partial differential equations (PDEs) with periodic boundary conditions are investigated.  The equations are inspired by applications in Physics, meaning they have a well-defined threshold for the onset of linear instability.  Based on the PDEs, the Fourier amplitudes (or normal modes) of the solution are computed, and are found to solve a system of coupled ODEs.  Typically, there are infinitely many degrees of freedom in the system of coupled ODEs.  However, just beyond the threshold for the onset of linear instability, an approximation can be made which greatly simplifies this coupled system.  This approxiation goes by the name of <b>weakly nonlinear theory</b>.
 
-
-This directory contains a Chebyshev collocation method to compute the eigenvalues of the Orr-Sommerfeld equation in case of a mixing-layer flow, given by:
+In this repository, the Cahn-Hilliard equation in one spatial dimension is introduced as a use case of weakly nonlinear analysis.  The equation reads:
 
 $$
-U_0(z)=1-\Lambda+\frac{2\Lambda}{1+\sinh^{2N}[z\sinh^{-1}(1)]},
+\frac{\partial C}{\partial t}=D\frac{\partial^2}{\partial x^2}(C^3-C-\gamma \partial_{xx}C),\qquad t>0,\qquad x\in (0,L),
 $$
 
-Nominally, $z\in (-\infty,\infty)$, which is truncated in the code, with $z\in (-H,H)$, where $H$ should be large.  This example is covered in <b>Section 5.7</b> of the reference text.
+with initial data $C(x,t=0)=C_{init}(x)$ and periodic boundary coditions on the interval $(0,L)$.  Also, $D$ and $\gamma$ are positive constants.
 
-Again, the code structure is a little bit complicated, and is summarized here in what follows.
+The solution $C(x,t)$can be written in term sof Fourier modes:
 
-Calls to the core solver `mixing_layer_solver.m` are handled by various wrap-around functions, supported by:
+$$
+C(x,t)=\sum_{n=-\infty}^\infty A_n(t)e^{i k_n x},\qquad k_n=(2\pi/L)n,\qquad A_{-n}=A_n^*
+$$
 
-* `fix_all_parameters.m`
-* `main_spatiotemporal.m`
+hence
 
-# fix_all_parameters
+$$
+A_n=\frac{1}{L}\int_0^L C(x,t)e^{-i k_n x}dx
+$$
 
-In this code, the Reynolds number $Re$ and the truncation number $N_1$ are fixed.  Correspondingly, there are $N_1+1$ Chebyshev polynomials used in the truncation.  Other parameters are also set in a self-explanatory way:
+In terms of Fourier amplitudes, the Cahn-Hilliard equation becomes:
 
-```matlab
-height=8;
-R_param=-1.1;
-N_param=5;
-Re=100;
+$$
+\frac{dA_n}{dt}=\nu(k_n)A_n-Dk_n^2\sum_{p=-\infty}^\infty \sum_{q=-\infty}^\infty A_p A_q A_{n-p-q},
+$$
 
-%  Order of Chebyshev approximation
-
-N_1 =95;
-```
-
-Here, `R_param` is equivlanet to $\Lambda$, and `N_param` is equivalent to $N$ in the definition of the base flow $U_0(z)$.
-
-# main_spatiotemporal
-
-In this code, a grid of complex-valued wavenumbers is created:
-
-```matlab
-dalphar=0.005;
-dalphai=0.02;
-ar=1e-4:dalphar:1.2;
-ai=-1.5:dalphai:0;
-```
-
-A `for` loop over all such complex-valued wavenumbers is created, and each each wavenumber, a call is made to `mixing_layer_solver.m`  This code recasts the Orr-Sommerfeld problem for $U_0(z)$ as a generalized eigenvalue problem $La=\lambda Ma$, and solves for the first $N_1+1$ eigenvalues:
-
-```matlab
-[lambda,~,~]=mixing_layer_solver(alpha_param,T4_1,T2_1,T0_1,T0_U2_1,T2_U0_1,T0_U0_1);
-```
-
-The eigenvalues are sorted by the largest real part as in previous examples, and arrays are built up the complex-valued frequencies, which depend on wavenumber:
-
-```matlab
-for i=1:length(ar)
-    for j=1:length(ai)
-        alpha_param=ar(i)+sqrt(-1)*ai(j);        
-
-        [lambda,~,~]=mixing_layer_solver(alpha_param,T4_1,T2_1,T0_1,T0_U2_1,T2_U0_1,T0_U0_1);
-        
-        [~,ix]=max(real(lambda));
-        v1=sqrt(-1)*lambda(ix);
-        lambda(ix)=-1000;
-        [~,ix]=max(real(lambda));
-        v2=sqrt(-1)*lambda(ix);
-        lambda(ix)=-1000;
-	    …
- 	    omega1(i,j)=v1;
-        omega2(i,j)=v2;
-	    …
-	end
-end
-```
-
-Results can be visualized using contour plots:
-
-`contour(ar,ai,imag(omega1))`,
-
-etc.
-
-
-
-
-
-
+where $\nu(k)=Dk^2(1-\gamma k^2)$ gives the dispersion relation for the linearized Cahn-Hilliard equation.
