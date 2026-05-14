@@ -40,13 +40,14 @@ $$
 If we write $u=u_0e^{-i\omega t}$, then the eigenvalues $\omega$ are complex-valued, with $\omega=\omega_r+i\omega_i$ given by:
 
 $$
-\omega_r=E_0\pm (1/2)\sqrt{4A^2-(g_1-g_2)^2},\,\,\omega_i=\mu_0-(1/2)(g_1+g_2)
+\omega_r=E_0\pm (1/2)\sqrt{4A^2-(g_1-g_2)^2},   \qquad \omega_i=\mu_0-(1/2)(g_1+g_2)
 $$
 
 in <b>Case 1</b> with $4A^2>(g_1-g_2)^2$, and
 
 $$
-\oega_r=E_0\,\,\omega_i=\mu_0-(1/2)(g_1+g_2)\pm \sqrt{ (g_1-g_2)^2-4A^2}
+\omega_r=E_0, \qquad \omega_i=\mu_0-(1/2)(g_1+g_2)\pm \sqrt{ (g_1-g_2)^2-4A^2}
+$$
 
 
 in <b>Case 2</b> with $4A^2<(g_1-g_2)^2$.
