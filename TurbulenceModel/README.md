@@ -19,3 +19,5 @@ Further outputs:
 * kG - turbulent kinetic energy, again $z$-depenent
 
 Sample results using this code are shown below.
+
+![Cartoon](cartoon1.png1)
