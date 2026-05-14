@@ -91,10 +91,12 @@ $$
 The implicit equation is written out in more detail now:
 
 $$
+\begin{aligned}
 \left(1+a_x+a_z\right)C_{ij}^{n+1}-\tfrac{1}{2}a_x\left(C_{i+1,j}^{n+1}+C_{i-1,j}^{n+1}\right)-
 \tfrac{1}{2}a_z\left(C_{i,j+1}^{n+1}+C_{i,j-1}^{n+1}\right)\\=
 %
 \left[\mathbb{I}+\tfrac{1}{2}\Delta t\mathcal{D}\right]\left(C_{ij}^n\right)+s_{ij}:=\mathrm{RHS}_{ij}^n,
+\end{aligned}
 $$
 
 where $a_x=\Delta t/\Delta x^2$ and $a_z=\Delta t/\Delta z^2$.
