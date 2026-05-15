@@ -1,6 +1,6 @@
 # sTPLS
 
-This directory contains a Fortran 90 Navier-Stokes solver which simulates turbulent channel flow, using a Large-Eddy Simulation (LES) with a Smagorinsky closure model.  The computational domain is shown below.  The computational setup is described in detail in <b>Chapter 12</b> of the reference text.  This builds on an earlier publication by [Ó Náraigh, Fannon, and Loiseau](https://iopscience.iop.org/article/10.1088/0143-0807/37/4/045001/meta).  For maximum accessibility, it is the publication that is referred to here.   The arxiv version of the publication is available [here](https://arxiv.org/abs/1511.07800).
+This directory contains a Fortran 90 Navier-Stokes solver which simulates turbulent channel flow, using a Large-Eddy Simulation (LES) with a Smagorinsky closure model.  The computational domain is shown below.  The computational setup is described in detail in <b>Chapter 12</b> of the reference text.  This builds on an earlier publication by [Ó Náraigh, Fannon, and Loiseau](<https://iopscience.iop.org/article/10.1088/0143-0807/37/4/045001/meta>).  For maximum accessibility, it is the publication that is referred to here.   The arxiv version of the publication is available [here](<https://arxiv.org/abs/1511.07800>).
 
 ![cartoon](cartoon1.png)
 
