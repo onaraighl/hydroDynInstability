@@ -4,7 +4,7 @@ This directory contains a Fortran 90 Navier-Stokes solver which simulates turbul
 
 ![cartoon](cartoon1.png)
 
-<b>Note:</b> the code was first hosted on ![sourceforge](<https://sourceforge.net/p/tpls/code/HEAD/tree/trunk/s-tpls/>).  In May 2026 this code was downloaded to a local machine and some corrections were made (to bring the Fortran MPI into the present decade).  The resulting code was recompiled on a local machine and run for a test case.  Once tested, the code was uploaded here.
+<b>Note:</b> the code was first hosted on [sourceforge](<https://sourceforge.net/p/tpls/code/HEAD/tree/trunk/s-tpls/>).  In May 2026 this code was downloaded to a local machine and some corrections were made (to bring the Fortran MPI into the present decade).  The resulting code was recompiled on a local machine and run for a test case.  Once tested, the code was uploaded here.
 
 
 # Compiling code and running the code
