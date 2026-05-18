@@ -8,7 +8,7 @@ The main thing to keep in mind is that sTPLS outputs data every 1000 iterations,
 
 ![cartoon1.png](cartoon1.png)
 
-These columns correspond to (x,y,z) coordinates (first three columns), (u,v,w) velocities (next three columns).  The last two columns correspond to pressure and eddy viscosity.  
+These columns correspond to $(x,y,z)$ coordinates (first three columns), $(u,v,w)$ velocities (next three columns).  The last two columns correspond to pressure and eddy viscosity.  
 
 # make_slices.f90
 
