@@ -12,7 +12,7 @@ These columns correspond to (x,y,z) coordinates (first three columns), (u,v,w) v
 
 # make_slices.f90
 
-This code reads in the files `sp3dchannel_    N.dat`.  For each N, two corresponding slices are generated: one slice in the $xz$ plane at $y=L_y/2$ and one slice in the $xy$ mindplane at $z=L_z/2$.  The slices are stored in new `.dat' files.  Two such `.dat files' are provided in this repository:
+This code reads in the files `sp3dchannel_    N.dat`.  For each N, two corresponding slices are generated: one slice in the $xz$ plane at $y=L_y/2$ and one slice in the $xy$ mindplane at $z=L_z/2$.  The slices are stored in new `.dat` files.  Two such `.dat` files are provided in this repository:
 
 *
 *
