@@ -63,3 +63,7 @@ data files are provided here so that the code can be immediately used.  Two such
 
 The choice of file is selected in the main part of the code (main_spsrj_LES.f90 and
 main_spsrj_LES_restart.f90) - search for "Get relaxation values for SRJ scheme"
+
+# Postprocessing the results
+
+The code is configured to output 3D datafiles every 1000 iterations.  These can be postprocessed for the purpose of generating turbulence statistics.  Sample postprocessing codes are included in the [postprocessing directory](https://github.com/onaraighl/hydroDynInstability/tree/main/sTPLS/postProcess).
