@@ -23,7 +23,9 @@ These can be visualized - e.g. the Matlab code `plot_slice.m` extracts slices in
 
 The Fortran code can be compiled in the usual way, e.g. `gfortran -O3 make_slices.f90 -o slice.x` and can then be executed by typing `/slice.x` at the command line.
 
-<b>A note of caution:</b> The code should be configured so that the size of the velocity and pressure arrays matches with the size of the same arrays in sTPLS.  Also, we have in mind that the code is operating on a sequential list of `.dat` files, starting with `sp3dchannel_    Nstart.dat` and ending with `sp3dchannel_    Nend.dat`.   Also, in this example, the integer $N$ labelling these files steps up in increments of $1000$.
+<b>A note of caution:</b> The code should be configured so that the size of the velocity and pressure arrays matches with the size of the same arrays in sTPLS.  
+
+Furthermore, we have in mind that the code is operating on a sequential list of `.dat` files, starting with `sp3dchannel_    Nstart.dat` and ending with `sp3dchannel_    Nend.dat`.   Finally, in this example, the integer $N$ labelling these files steps up in increments of $1000$.
 
 These parameters have to be specified via hard-coding.  This can be seen on line 18 of the code, and is also shown here in the following cartoon:
 
