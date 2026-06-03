@@ -39,4 +39,6 @@ Similar to the previous code, this file reads in the files `sp3dchannel_    N.da
 
 In the <b>first mode</b>, the flag `ind_2` is set to zero.  Then, the code executes an iterative loop over all files of the form `sp3dchannel_    Nstart.dat` to `sp3dchannel_    Nend.dat`.  The code then computes the average value of $u$ averaged in the $x$ and $y$-directions.  The resulting average is evaluated at the channel midpoint $z=0.5$, and a time series $\phi(t)=\langle u(\cdot,\cdot,z=0.5,t)\rangle$ is built up.  The time series $\phi(t)$ is then output to a file `u_max.dat`.
 
-By plotting the values of `u_max.dat` as a function of time, the time for the simulation to reach a statistically steady state can be obtained.
+By plotting the values of `u_max.dat` as a function of time, the time for the simulation to reach a statistically steady state can be obtained.  This value is noted down.  The corresponding value of $N$ is identified with the variable name `t_equil_i`.
+
+In the <b>first mode</b>, the flag `ind_2` is set to two.  The value of `t_equil_i` is updated and the code is recompiled....
