@@ -12,7 +12,7 @@ These columns correspond to $(x,y,z)$ coordinates (first three columns), $(u,v,w
 
 # make_slices.f90
 
-This code reads in the files `sp3dchannel_    N.dat`, where $N$ is an integer label.  Here, we have in mind that the code is operating on a sequential list of `.dat` files, starting with `sp3dchannel_    Nstart.dat` and ending with `sp3dchannel_    Nend.dat`.   Thus, the integer $N$ is stepping up in increments of $\Delta N$ starting at $N=N_{start}$ and ending at $N=N_{end}$.  In this example, $\Delta N=1000$.
+This code reads in the files `sp3dchannel_    N.dat`, where $N$ is an integer label.  Here, we have in mind that the code is operating on a sequential list of `sp3dchannel_.dat` files, starting with `sp3dchannel_    Nstart.dat` and ending with `sp3dchannel_    Nend.dat`.   Thus, the integer $N$ is stepping up in increments of $\Delta N$ starting at $N=N_{start}$ and ending at $N=N_{end}$.  In this example, $\Delta N=1000$.
 
 For each $N$, two corresponding slices are generated: one slice in the $xz$ plane at $y=L_y/2$ and one slice in the $xy$ mindplane at $z=L_z/2$.  The slices are stored in new `.dat` files.  Two such `.dat` files are provided in this repository:
 
