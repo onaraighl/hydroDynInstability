@@ -21,4 +21,6 @@ These can be visualized - e.g. the Matlab code `plot_slice.m` extracts slices in
 
 ![slice12000.png](slice12000.png)
 
-The Fortran code can be compiled in the usual way, e.g. `gfortran -O3 make_slices.f90 -o slice.x` and can then be executed by typing `/slice.x` at the command lilne.
+The Fortran code can be compiled in the usual way, e.g. `gfortran -O3 make_slices.f90 -o slice.x` and can then be executed by typing `/slice.x` at the command line.
+
+A note of caution: the code should be configured so that the size of the velocity and pressure arrays matches with the size of the same arrays in sTPLS.
