@@ -46,9 +46,17 @@ In the same way, the domain scales $L_x$, $L_y$, and $L_z$ are hard-coded no lin
 
 Similar to the previous code, this file reads in the files `sp3dchannel_    N.dat` and performs spatio-temporal averaging.  The code should be executed twice, in a different mode each time.  The note of caution about the code configuration mentioned before applies here also.
 
-<b>Inputs:</b>  The code reads in the files `sp3dchannel_    N.dat`, where $N$ is an integer label.  The code operates on a sequential list of `sp3dchannel_.dat` files, starting with `sp3dchannel_    Nstart.dat` and ending with `sp3dchannel_    Nend.dat`.   Thus, the integer $N$ is stepping up in increments of $\Delta N$ starting at $N=N_{start}$ and ending at $N=N_{end}$.  In this example, $\Delta N=1000$.
+<b>Inputs:</b>  The same as `make_slices.f90`.  The code reads in the files `sp3dchannel_    N.dat`, where $N$ is an integer label:
+
+* The code operates on a sequential list of `sp3dchannel_.dat` files, starting with `sp3dchannel_    Nstart.dat` and ending with `sp3dchannel_    Nend.dat`.
+* The integer $N$ is stepping up in increments of $\Delta N$ starting at $N=N_{start}$ and ending at $N=N_{end}$.
+* In this example, $\Delta N=1000$.
 
 <b>Outputs:</b> Various `.dat` files, to be described below.
+
+<b>Compilation:</b>  E.g. gfortran -O3 data_analysis_0804.f90 -o averaging.x
+
+<b>Execution:</b> Type `/averaging.x` at the command line.
 
 In the <b>first mode</b>, the flag `ind_2` is set to zero.  Then, the code executes an iterative loop over all files of the form `sp3dchannel_    Nstart.dat` to `sp3dchannel_    Nend.dat`.  The code then computes the average value of $u$ averaged in the $x$ and $y$-directions.  The resulting average is evaluated at the channel midpoint $z=0.5$, and a time series $\phi(t)=\langle u(\cdot,\cdot,z=0.5,t)\rangle$ is built up.  The time series $\phi(t)$ is then output to a file `u_max.dat`.  The output is a file `u_max.dat' containing $t$-values and correspnding $\phi$-values.  A sample `u_max.dat` file is included here in this directory.  A visual plot of the results from this file is shown in the following figure:
 
