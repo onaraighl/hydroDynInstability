@@ -46,6 +46,6 @@ In the <b>first mode</b>, the flag `ind_2` is set to zero.  Then, the code execu
 ![u_max.png](u_max.png)
 
 
-By plotting the values of `u_max.dat` as a function of time, the time for the simulation to reach a statistically steady state can be obtained.  This value is noted down.  The corresponding value of $N$ is identified with the variable name `t_equil_i`.
+By plotting the values of `u_max.dat` as a function of time as in the figure, the time for the simulation to reach a statistically steady state can be obtained.  This value is noted down.  The corresponding value of $N$ is identified with the variable name `t_equil_i`.  From the figure, the time at which the statistically steady state is reached is $t=15$.  Correspondingly, `t_equil_i` is given the value $150$.
 
-In the <b>second mode</b>, the flag `ind_2` is set to two.  The value of `t_equil_i` is updated and the code is recompiled....
+In the <b>second mode</b>, the flag `ind_2` is set to two.  The value of `t_equil_i` is updated and the code is recompiled.
