@@ -80,11 +80,11 @@ A visual plot of the results from this file is shown in the following figure:
 
 By plotting the values of `u_max.dat` as a function of time as in the figure, the time for the simulation to reach a statistically steady state can be obtained.  This value is noted down.  The corresponding value of $N$ is identified with the variable name `t_equil_i`.  From the figure, the time at which the statistically steady state is reached is $t_1=15$.  Correspondingly, `t_equil_i` is given the value $150$.
 
-In the <b>second mode</b>, the flag `ind_2` is set to two.  The value of `t_equil_i` is updated and the code is recompiled.  This is shown in the following cartoon:
+In the <b>second mode</b>, the value of `t_equil_i` is updated and the code is recompiled (line 65).  The flag `ind_2` is set to two (line 67).  Relevant code lines are shown in the following cartoon:
 
 ![cartoon4.png](cartoon4.png)
 
-Shown here are some of the other lines where parameter values are hard-coded and may need to be changed (see "a note of caution", above).
+Shown also are some of the other lines where parameter values are hard-coded and may need to be changed (see "a note of caution", above).
 
 
 <b>Output:</b> The output of the code after the second time of running is produced on lines 200-205 of the code:
