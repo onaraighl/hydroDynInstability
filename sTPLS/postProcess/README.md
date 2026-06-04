@@ -44,7 +44,13 @@ In the same way, the domain scales $L_x$, $L_y$, and $L_z$ are hard-coded no lin
 
 # data_analysis_0804.f90
 
-Similar to the previous code, this file reads in the files `sp3dchannel_    N.dat` and performs spatio-temporal averaging.  The code should be executed twice, in a different mode each time.  The note of caution about the code configuration mentioned before applies here also.
+Similar to the previous code, this file reads in the files `sp3dchannel_    N.dat` and performs spatio-temporal averaging.  The code should be executed twice, in a different mode each time.  The note of caution about the code configuration mentioned before applies here also.  For a generic quantity $\psi(x,y,z,t)$, the spatio-temporal average $\langle \psi\rangle(z)$ is defined as:
+
+\[
+\psi(z)=\frac{1}{t_2-t_1}\frac{1}{L_x L_y}\int_{t_1}^{t_2}dt\int_0^{L_x}dx\int_0^{L_y}dy \psi(x,y,z,t).
+\]
+
+Here, $t_1$ is the first time at which the simulation reaches a statistically steady state and $t_2$ is the final time of the simulation.
 
 <b>Inputs:</b>  The same as `make_slices.f90`.  The code reads in the files `sp3dchannel_    N.dat`, where $N$ is an integer label:
 
@@ -65,4 +71,10 @@ In the <b>first mode</b>, the flag `ind_2` is set to zero.  Then, the code execu
 
 By plotting the values of `u_max.dat` as a function of time as in the figure, the time for the simulation to reach a statistically steady state can be obtained.  This value is noted down.  The corresponding value of $N$ is identified with the variable name `t_equil_i`.  From the figure, the time at which the statistically steady state is reached is $t=15$.  Correspondingly, `t_equil_i` is given the value $150$.
 
-In the <b>second mode</b>, the flag `ind_2` is set to two.  The value of `t_equil_i` is updated and the code is recompiled.
+In the <b>second mode</b>, the flag `ind_2` is set to two.  The value of `t_equil_i` is updated and the code is recompiled.  The <b>output</b> the second time around is produced on lines 200-205 of the code:
+
+![cartoon3.png](cartoon3.png)
+
+These are: the space-time average values of $u$, the RMS value of $u$, $v$, and $w$, and the Reynolds stress component $\tau_{xz}(z)$.  The $z$-coordinate is presented in wall units.  The results are contained in the file `averaged_velocities.dat`.
+
+
