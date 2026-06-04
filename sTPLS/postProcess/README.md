@@ -31,7 +31,7 @@ These parameters have to be specified via hard-coding.  This can be seen on line
 
 ![cartoon2.png](cartoon2.png)
 
-In the same way, the domain scales $L_x$, $L_y$, and $L_z$ are hard-coded no lines 27-20, shown here also in the following cartoon:
+In the same way, the domain scales $L_x$, $L_y$, and $L_z$ are hard-coded no lines 27-29, shown here also in the following cartoon:
 
 ![cartoon2x.png](cartoon2x.png)
 
