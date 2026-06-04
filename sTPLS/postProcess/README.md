@@ -58,7 +58,7 @@ Similar to the previous code, this file reads in the files `sp3dchannel_    N.da
 
 <b>Execution:</b> Type `/averaging.x` at the command line.
 
-In the <b>first mode</b>, the flag `ind_2` is set to zero.  Then, the code executes an iterative loop over all files of the form `sp3dchannel_    Nstart.dat` to `sp3dchannel_    Nend.dat`.  The code then computes the average value of $u$ averaged in the $x$ and $y$-directions.  The resulting average is evaluated at the channel midpoint $z=0.5$, and a time series $\phi(t)=\langle u(\cdot,\cdot,z=0.5,t)\rangle$ is built up.  The time series $\phi(t)$ is then output to a file `u_max.dat`.  The output is a file `u_max.dat' containing $t$-values and correspnding $\phi$-values.  A sample `u_max.dat` file is included here in this directory.  A visual plot of the results from this file is shown in the following figure:
+In the <b>first mode</b>, the flag `ind_2` is set to zero.  Then, the code executes an iterative loop over all files of the form `sp3dchannel_    Nstart.dat` to `sp3dchannel_    Nend.dat`.  The code then computes the average value of $u$ averaged in the $x$ and $y$-directions.  The resulting average is evaluated at the channel midpoint $z=0.5$, and a time series $\phi(t)=\langle u(\cdot,\cdot,z=0.5,t)\rangle$ is built up.  The time series $\phi(t)$ is then output to a file `u_max.dat`.  The output is a file `u_max.dat` containing $t$-values and correspnding $\phi$-values.  A sample `u_max.dat` file is included here in this directory.  A visual plot of the results from this file is shown in the following figure:
 
 ![u_max.png](u_max.png)
 
