@@ -66,7 +66,7 @@ The code needs be executed twice, in a different mode each time.  The first time
 
 <b>Execution:</b> Type `/averaging.x` at the command line.
 
-In the <b>first mode</b>, the time $t_1$ for the simulation to reach a statistically steadh state is computed.  This is done as follows:
+In the <b>first mode</b>, the time $t_1$ for the simulation to reach a statistically steady state is computed.  This is done as follows:
 
 * The flag `ind_2` is set to zero.
 * The code executes an iterative loop over all files of the form `sp3dchannel_    Nstart.dat` to `sp3dchannel_    Nend.dat`.
