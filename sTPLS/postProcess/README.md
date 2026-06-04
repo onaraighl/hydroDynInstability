@@ -12,9 +12,9 @@ These columns correspond to $(x,y,z)$ coordinates (first three columns), $(u,v,w
 
 # make_slices.f90
 
-This code reads in the files `sp3dchannel_    N.dat`, where $N$ is an integer label.  Here, we have in mind that the code is operating on a sequential list of `sp3dchannel_.dat` files, starting with `sp3dchannel_    Nstart.dat` and ending with `sp3dchannel_    Nend.dat`.   Thus, the integer $N$ is stepping up in increments of $\Delta N$ starting at $N=N_{start}$ and ending at $N=N_{end}$.  In this example, $\Delta N=1000$.
+<b>Inputs:</b>  The code reads in the files `sp3dchannel_    N.dat`, where $N$ is an integer label.  The code operates on a sequential list of `sp3dchannel_.dat` files, starting with `sp3dchannel_    Nstart.dat` and ending with `sp3dchannel_    Nend.dat`.   Thus, the integer $N$ is stepping up in increments of $\Delta N$ starting at $N=N_{start}$ and ending at $N=N_{end}$.  In this example, $\Delta N=1000$.
 
-For each $N$, two corresponding slices are generated: one slice in the $xz$ plane at $y=L_y/2$ and one slice in the $xy$ mindplane at $z=L_z/2$.  The slices are stored in new `.dat` files.  Two such `.dat` files are provided in this repository:
+<b>Outputs:</b> For each $N$, two corresponding slices are generated: one slice in the $xz$ plane at $y=L_y/2$ and one slice in the $xy$ mindplane at $z=L_z/2$.  The slices are stored in new `.dat` files.  Two such `.dat` files are provided in this repository:
 
 * 2dslice_xy_ 12000.dat
 * 2dslice_xz_ 12000.dat
@@ -35,9 +35,16 @@ These parameters have to be specified via hard-coding.  This can be seen on line
 
 # data_analysis_0804.f90
 
-Similar to the previous code, this file reads in the files `sp3dchannel_    N.dat` and performs spatio-temporal averaging.  The code should be executed twice, in a different mode each time.  The <b>note of caution</b> about the code configuration mentioned before applies here also.
+Similar to the previous code, this file reads in the files `sp3dchannel_    N.dat` and performs spatio-temporal averaging.  The code should be executed twice, in a different mode each time.  The note of caution about the code configuration mentioned before applies here also.
 
-In the <b>first mode</b>, the flag `ind_2` is set to zero.  Then, the code executes an iterative loop over all files of the form `sp3dchannel_    Nstart.dat` to `sp3dchannel_    Nend.dat`.  The code then computes the average value of $u$ averaged in the $x$ and $y$-directions.  The resulting average is evaluated at the channel midpoint $z=0.5$, and a time series $\phi(t)=\langle u(\cdot,\cdot,z=0.5,t)\rangle$ is built up.  The time series $\phi(t)$ is then output to a file `u_max.dat`.
+<b>Inputs:</b>  The code reads in the files `sp3dchannel_    N.dat`, where $N$ is an integer label.  The code operates on a sequential list of `sp3dchannel_.dat` files, starting with `sp3dchannel_    Nstart.dat` and ending with `sp3dchannel_    Nend.dat`.   Thus, the integer $N$ is stepping up in increments of $\Delta N$ starting at $N=N_{start}$ and ending at $N=N_{end}$.  In this example, $\Delta N=1000$.
+
+<b>Outputs:</b> Various `.dat` files, to be described below.
+
+In the <b>first mode</b>, the flag `ind_2` is set to zero.  Then, the code executes an iterative loop over all files of the form `sp3dchannel_    Nstart.dat` to `sp3dchannel_    Nend.dat`.  The code then computes the average value of $u$ averaged in the $x$ and $y$-directions.  The resulting average is evaluated at the channel midpoint $z=0.5$, and a time series $\phi(t)=\langle u(\cdot,\cdot,z=0.5,t)\rangle$ is built up.  The time series $\phi(t)$ is then output to a file `u_max.dat`.  The output is a file `u_max.dat' containing $t$-values and correspnding $\phi$-values.  A sample `u_max.dat` file is included here in this directory.  A visual plot of the results from this file is shown in the following figure:
+
+![u_max.png](u_max.png)
+
 
 By plotting the values of `u_max.dat` as a function of time, the time for the simulation to reach a statistically steady state can be obtained.  This value is noted down.  The corresponding value of $N$ is identified with the variable name `t_equil_i`.
 
