@@ -93,7 +93,7 @@ Shown also are some of the other lines where parameter values are hard-coded and
 
 ![cartoon3.png](cartoon3.png)
 
-These are: the space-time average values of $u$, the RMS value of $u$, $v$, and $w$, and the Reynolds stress component $\tau_{xz}(z)$.  The $z$-coordinate is presented in standard units ($z/L$) and also in wall units.  The results are contained in the file `averaged_velocities.dat`.  A sample `averaged_velocities.dat` file is included in this directory.  A plot of the averaged streamwise velocity as a function of $z$ is given below.  
+These are: the space-time average values of $u$, the RMS value of $u$, $v$, and $w$, and the Reynolds stress component $\tau_{xz}(z)$.  The $z$-coordinate is presented in standard units ($z/L$, going from zero to one), and also in wall units.  The results are contained in the file `averaged_velocities.dat`.  A sample `averaged_velocities.dat` file is included in this directory.  A plot of the averaged streamwise velocity as a function of $z$ is given below.  
 
 ![u_av.png](u_av.png)
 
