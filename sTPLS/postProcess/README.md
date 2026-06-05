@@ -47,7 +47,7 @@ In the same way, the domain scales $L_x$, $L_y$, and $L_z$ are hard-coded on lin
 Similar to the previous code, this file reads in the files `sp3dchannel_    N.dat` and performs spatio-temporal averaging.    For a generic quantity $\psi(x,y,z,t)$, the spatio-temporal average $\langle \psi\rangle(z)$ is defined as:
 
 $$
-\psi(z)=\frac{1}{t_2-t_1}\frac{1}{L_x L_y}\int_{t_1}^{t_2}dt\int_0^{L_x}dx\int_0^{L_y}dy \psi(x,y,z,t).
+\langle \psi\rangle(z)=\frac{1}{t_2-t_1}\frac{1}{L_x L_y}\int_{t_1}^{t_2}dt\int_0^{L_x}dx\int_0^{L_y}dy \psi(x,y,z,t).
 $$
 
 Here, $t_1$ is the first time at which the simulation reaches a statistically steady state and $t_2$ is the final time of the simulation.  The aim of this code is to calculate such spatio-temporal averages, for various quantities of interest.
